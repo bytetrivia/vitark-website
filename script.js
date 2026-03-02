@@ -161,7 +161,7 @@ function drawParticles() {
         // Draw particle
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(37, 99, 235, ${p.opacity})`;
+        ctx.fillStyle = `rgba(45, 58, 74, ${p.opacity})`;
         ctx.fill();
 
         // Draw connections
@@ -176,7 +176,7 @@ function drawParticles() {
                 ctx.moveTo(p.x, p.y);
                 ctx.lineTo(p2.x, p2.y);
                 const opacity = (1 - dist / 120) * 0.06;
-                ctx.strokeStyle = `rgba(37, 99, 235, ${opacity})`;
+                ctx.strokeStyle = `rgba(45, 58, 74, ${opacity})`;
                 ctx.lineWidth = 0.5;
                 ctx.stroke();
             }
